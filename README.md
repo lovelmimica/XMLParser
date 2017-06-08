@@ -6,16 +6,16 @@ Specification:
 Create an application that will accept XML documents, parse them, and store them in a database.
 The XML documents are in the following format: 
 '''xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<entries> <entry>Adam</entry> 
-  <entry parentName="Adam">Stjepan</entry> 
-  <entry parentName="Stjepan">Luka</entry> 
-  <entry parentName="Adam">Leopold</entry> 
-  <entry parentName="Leopold">Fran</entry> 
-  <entry parentName="Leopold">Ivan</entry> 
-  <entry parentName="Ivan">Marko</entry> 
-  <entry parentName="Marko">Robert</entry>
-</entries>
+&lt?xml version="1.0" encoding="UTF-8"?> 
+&ltentries> <entry>Adam</entry> 
+  &lt;entry parentName="Adam">Stjepan</entry> 
+  &ltentry parentName="Stjepan">Luka</entry> 
+  &ltentry parentName="Adam">Leopold</entry> 
+  &ltentry parentName="Leopold">Fran</entry> 
+  &ltentry parentName="Leopold">Ivan</entry> 
+  &ltentry parentName="Ivan">Marko</entry> 
+  &ltentry parentName="Marko">Robert</entry>
+&lt/entries>
 '''
 Upon parsing the document, the application should form a tree of parent-child relationships and write the tree in a database table called ENTRY. An entry can have a single parent, but multiple children. If an entry does not have a parent, then it is considered to be the root of the tree.
 
