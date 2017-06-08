@@ -6,8 +6,8 @@ Specification:
 Create an application that will accept XML documents, parse them, and store them in a database.
 The XML documents are in the following format: 
 '''xml
-&lt?xml version="1.0" encoding="UTF-8"?> 
-&ltentries> <entry>Adam</entry> 
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&ltentries&gt <entry>Adam</entry> 
   &ltentry parentName="Adam"&gtStjepan&lt/entry&gt 
   &ltentry parentName="Stjepan"&gtLuka&lt/entry&gt 
   &ltentry parentName="Adam"&gtLeopold&lt/entry&gt 
