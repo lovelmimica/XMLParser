@@ -5,19 +5,19 @@ Specification:
 
 Create an application that will accept XML documents, parse them, and store them in a database.
 The XML documents are in the following format: 
-'''xml
+
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&ltentries&gt <entry>Adam</entry> 
-  &ltentry parentName="Adam"&gtStjepan&lt/entry&gt 
-  &ltentry parentName="Stjepan"&gtLuka&lt/entry&gt 
-  &ltentry parentName="Adam"&gtLeopold&lt/entry&gt 
-  &ltentry parentName="Leopold"&gtFran&lt/entry&gt 
-  &ltentry parentName="Leopold"&gtIvan&lt/entry&gt
-  &ltentry parentName="Ivan"&gtMarko&lt/entry&gt
-  &ltentry parentName="Marko"&gtRobert&lt/entry&gt
-&lt/entries&gt
-'''
-Upon parsing the document, the application should form a tree of parent-child relationships and write the tree in a database table called ENTRY. An entry can have a single parent, but multiple children. If an entry does not have a parent, then it is considered to be the root of the tree.
+&lt;entries&gt; &lt;entry>Adam&lt;/entry> 
+  &lt;entry parentName="Adam"&gt;Stjepan&lt;/entry&gt; 
+  &lt;entry parentName="Stjepan"&gt;Luka&lt;/entry&gt; 
+  &lt;entry parentName="Adam"&gt;Leopold&lt;/entry&gt; 
+  &lt;entry parentName="Leopold"&gt;Fran&lt;/entry&gt; 
+  &lt;entry parentName="Leopold"&gt;Ivan&lt;/entry&gt;
+  &lt;entry parentName="Ivan"&gt;Marko&lt;/entry&gt;
+  &lt;entry parentName="Marko"&gt;Robert&lt;/entry&gt;
+&lt;/entries&gt;
+
+After parsing the document, the application should form a tree of parent-child relationships and write the tree in a database table called ENTRY. An entry can have a single parent, but multiple children. If an entry does not have a parent, then it is considered to be the root of the tree.
 
 The application should be a Spring MVC application, and the XML documents can be sent to the application in two ways:
 1. Via HTTP POST requests (Content-Type: application/xml)
