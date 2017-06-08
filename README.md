@@ -8,14 +8,14 @@ The XML documents are in the following format:
 '''xml
 &lt?xml version="1.0" encoding="UTF-8"?> 
 &ltentries> <entry>Adam</entry> 
-  &lt;entry parentName="Adam">Stjepan</entry> 
-  &ltentry parentName="Stjepan">Luka</entry> 
-  &ltentry parentName="Adam">Leopold</entry> 
-  &ltentry parentName="Leopold">Fran</entry> 
-  &ltentry parentName="Leopold">Ivan</entry> 
-  &ltentry parentName="Ivan">Marko</entry> 
-  &ltentry parentName="Marko">Robert</entry>
-&lt/entries>
+  &ltentry parentName="Adam"&gtStjepan&lt/entry&gt 
+  &ltentry parentName="Stjepan"&gtLuka&lt/entry&gt 
+  &ltentry parentName="Adam"&gtLeopold&lt/entry&gt 
+  &ltentry parentName="Leopold"&gtFran&lt/entry&gt 
+  &ltentry parentName="Leopold"&gtIvan&lt/entry&gt
+  &ltentry parentName="Ivan"&gtMarko&lt/entry&gt
+  &ltentry parentName="Marko"&gtRobert&lt/entry&gt
+&lt/entries&gt
 '''
 Upon parsing the document, the application should form a tree of parent-child relationships and write the tree in a database table called ENTRY. An entry can have a single parent, but multiple children. If an entry does not have a parent, then it is considered to be the root of the tree.
 
