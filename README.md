@@ -2,6 +2,7 @@
 Project made in context of employment selection procedure, as a challenge. Application parses XML files and writes them in DB. Project has been made in Spring MVC framework. 
 
 Specification: 
+
 Create an application that will accept XML documents, parse them, and store them in a database.
 The XML documents are in the following format: 
 
@@ -23,13 +24,20 @@ The application should be a Spring MVC application, and the XML documents can be
 2. By placing the files to a predefined directory (the application should check this directory in a regular interval, e.g. every 30 seconds).
 
 Other requirements:
+
 -Project should use Java 8.
 -You can use Spring Boot if you'd like.
+
 -Maven should be used for resolving external libraries, and for running the tests from command line.
+
 -Separate Spring profiles should be used for test and development. Development profile can use any database of your choice (PostgreSQL, MySQL...) while test profile should use H2 or HSQL in-memory database.
+
 -Functionalities should be covered by unit tests as well as integration tests. Tests should be able to be executed from command line (Maven).
+
 -Use properties files to parameterize application (e.g. processing interval duration, input directory...).
+
 -Code should be organized in layers: controller, service, utils...
+
 -Base package should be hr.altima.
 
 Once done, please zip the solution (just the source code) and send it to us. Alternatively, you can put it to a public repository such as GitHub or Bitbucket.
