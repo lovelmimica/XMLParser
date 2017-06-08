@@ -5,7 +5,7 @@ Specification:
 
 Create an application that will accept XML documents, parse them, and store them in a database.
 The XML documents are in the following format: 
-
+'''xml
 <?xml version="1.0" encoding="UTF-8"?> 
 <entries> <entry>Adam</entry> 
   <entry parentName="Adam">Stjepan</entry> 
@@ -16,7 +16,7 @@ The XML documents are in the following format:
   <entry parentName="Ivan">Marko</entry> 
   <entry parentName="Marko">Robert</entry>
 </entries>
-"
+'''
 Upon parsing the document, the application should form a tree of parent-child relationships and write the tree in a database table called ENTRY. An entry can have a single parent, but multiple children. If an entry does not have a parent, then it is considered to be the root of the tree.
 
 The application should be a Spring MVC application, and the XML documents can be sent to the application in two ways:
