@@ -39,5 +39,3 @@ Other requirements:
 -Code should be organized in layers: controller, service, utils...
 
 -Base package should be hr.altima.
-
-Once done, please zip the solution (just the source code) and send it to us. Alternatively, you can put it to a public repository such as GitHub or Bitbucket.
