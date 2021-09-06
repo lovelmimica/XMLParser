@@ -1,4 +1,4 @@
-# xml-parser-spring
+# XML Parser
 Project made in context of employment selection procedure, as a challenge. Application parses XML files and writes them in DB. Project has been made in Spring MVC framework. 
 
 Specification: 
