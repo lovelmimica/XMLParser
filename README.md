@@ -1,7 +1,7 @@
 # XML Parser
-Project made in context of employment selection procedure, as a challenge. Application parses XML files and writes them in DB. Project has been made in Spring MVC framework. 
+Project made in context of employment selection procedure at one Croatian IT company. Developed in Spring MVC framework, application parses XML files and writes them in DB. 
 
-Specification: 
+##Specification: 
 
 Create an application that will accept XML documents, parse them, and store them in a database.
 The XML documents are in the following format: 
